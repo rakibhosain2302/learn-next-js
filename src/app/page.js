@@ -1,0 +1,12 @@
+import styles from "./page.module.css";
+
+export default function Home() {
+  return (
+    <div>
+      <main>
+        <h1>Welcome</h1>
+        <p>Your journey begins here.</p>
+      </main>
+    </div>
+  );
+}
