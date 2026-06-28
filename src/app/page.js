@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <div className={styles["page-container"]}>
       <main>
-        <StateComponent />
         <h1>Welcome</h1>
         <p className={styles.content}>Your journey begins here.</p>
 
