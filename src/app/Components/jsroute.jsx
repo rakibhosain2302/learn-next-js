@@ -1,10 +1,7 @@
 import React from 'react'
 import styles from '../page.module.css'
-import { useParams } from 'next/navigation'
 
 const jsroute = () => {
-  const params = useParams()
-
   return (
     <div className={styles["page-container"]}>
 
