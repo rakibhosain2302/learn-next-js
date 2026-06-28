@@ -1,5 +1,7 @@
 "use client";
 import StateComponent from "./Components/state";
+import JsRoute from "./Components/jsroute";
+
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -20,6 +22,10 @@ export default function Home() {
         {/* Components and State Handling */}
         <p className={styles["sub-title"]}>Stateful components manage dynamic data.</p>
         <StateComponent/>
+
+        {/* Component Routing */}
+        <p className={styles["sub-title"]}>Component-based routing for navigation.</p>
+        <JsRoute/>
       </main>
     </div>
   );
