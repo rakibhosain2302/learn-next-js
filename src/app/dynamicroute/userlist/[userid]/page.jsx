@@ -14,3 +14,11 @@ export default async function Page({ params }) {
         </div>
     );
 }
+
+
+export function generateMetadata({ params }) {
+  return {
+    title: `User ${params.userid} - User List`,
+    description: `Details and information for user ${params.userid}.`
+  };
+}
