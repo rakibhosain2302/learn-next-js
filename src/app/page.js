@@ -22,16 +22,20 @@ export default function Home() {
         <p className={styles.content}>Your journey begins here.</p>
 
         {/* Function and Event Handling */}
-         <p className={styles["sub-title"]}>Function and Event Handling</p>
+        <p className={styles["sub-title"]}>Function and Event Handling</p>
         <button onClick={handleClick}>Click me</button>
 
         {/* Components and State Handling */}
-        <p className={styles["sub-title"]}>Stateful components manage dynamic data.</p>
-        <StateComponent/>
+        <p className={styles["sub-title"]}>
+          Stateful components manage dynamic data.
+        </p>
+        <StateComponent />
 
         {/* Component Routing */}
-        <p className={styles["sub-title"]}>Component-based routing for navigation.</p>
-        <JsRoute/>
+        <p className={styles["sub-title"]}>
+          Component-based routing for navigation.
+        </p>
+        <JsRoute />
 
         <button onClick={handleNavigation}>Go to Class</button>
       </main>
