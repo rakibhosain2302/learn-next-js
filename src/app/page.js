@@ -1,12 +1,18 @@
 "use client";
 import StateComponent from "./Components/state";
 import JsRoute from "./Components/jsroute";
-
 import styles from "./page.module.css";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   const handleClick = () => {
     alert("Button clicked!");
+  };
+
+  const handleNavigation = () => {
+    router.push("/class");
   };
 
   return (
@@ -26,6 +32,8 @@ export default function Home() {
         {/* Component Routing */}
         <p className={styles["sub-title"]}>Component-based routing for navigation.</p>
         <JsRoute/>
+
+        <button onClick={handleNavigation}>Go to Class</button>
       </main>
     </div>
   );
