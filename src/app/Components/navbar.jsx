@@ -9,6 +9,9 @@ const Navbar = () => {
     return (
         <ul className="navigation">
             <li>
+                <Link href="/product" className={pathname === "/product" ? "active" : ""}>Product</Link>
+            </li>
+            <li>
                 <Link href="/signup" className={pathname === "/signup" ? "active" : ""}>Sign Up</Link>
             </li>
             <li>
